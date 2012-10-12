@@ -1,25 +1,44 @@
 //
 //  AVMvidFrameDecoder.h
-//  QTFileParserApp
 //
-//  Created by Moses DeJong on 4/23/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Moses DeJong on 1/4/11.
 //
+//  License terms defined in License.txt.
 
 #import <Foundation/Foundation.h>
 
 #import "AVFrameDecoder.h"
 #import "maxvid_file.h"
 
+// If USE_SEGMENTED_MMAP is defined, then each frame will be contained in a separate
+// mmap segment. Otherwise, a single memory map will be used for the entire mvid file.
+// This segmented mapping is only needed on iOS since memory usage limits are very
+// strict. MacOSX fully supports swapping with virtual memory so segmenting is not important.
+
+#if TARGET_OS_IPHONE
+# define USE_SEGMENTED_MMAP
+#endif // TARGET_OS_IPHONE
+
+#if defined(USE_SEGMENTED_MMAP)
+@class SegmentedMappedData;
+#endif // USE_SEGMENTED_MMAP
+
 @interface AVMvidFrameDecoder : AVFrameDecoder {
   NSString *m_filePath;
   MVFileHeader m_mvHeader;
-  MVFile *m_mvFile;
+  MVFrame *m_mvFrames;
   BOOL m_isOpen;
+  
+#if defined(USE_SEGMENTED_MMAP)
+  SegmentedMappedData *m_mappedData;
+#else
   NSData *m_mappedData;
+#endif // USE_SEGMENTED_MMAP
   
   CGFrameBuffer *m_currentFrameBuffer;  
-	NSArray *m_cgFrameBuffers;
+  NSArray *m_cgFrameBuffers;
+  
+  AVFrame *m_lastFrame;
   
   int frameIndex;
   BOOL m_resourceUsageLimit;
@@ -30,13 +49,22 @@
 }
 
 @property (nonatomic, copy) NSString *filePath;
-@property (nonatomic, copy) NSData *mappedData;
 @property (nonatomic, retain) CGFrameBuffer *currentFrameBuffer;
 @property (nonatomic, copy) NSArray *cgFrameBuffers;
+
+#if defined(USE_SEGMENTED_MMAP)
+@property (nonatomic, retain) SegmentedMappedData *mappedData;
+#else
+@property (nonatomic, copy) NSData *mappedData;
+#endif // REGRESSION_TESTS
 
 #if defined(REGRESSION_TESTS)
 @property (nonatomic, assign) BOOL simulateMemoryMapFailure;
 #endif // REGRESSION_TESTS
+
+// Return TRUE if RGB values are calibrated in the SRGB colorspace.
+
+@property (nonatomic, readonly) BOOL isSRGB;
 
 + (AVMvidFrameDecoder*) aVMvidFrameDecoder;
 
@@ -52,9 +80,9 @@
 
 - (void) rewind;
 
-// Advance the current frame index to the indicated frame index and store result in nextFrameBuffer
+// Advance the current frame index, see AVFrameDecoder.h for full method description.
 
-- (UIImage*) advanceToFrame:(NSUInteger)newFrameIndex;
+- (AVFrame*) advanceToFrame:(NSUInteger)newFrameIndex;
 
 // Decoding frames may require additional resources that are not required
 // to open the file and examine the header contents. This method will
@@ -90,5 +118,9 @@
 
 // Time each frame shold be displayed
 - (NSTimeInterval) frameDuration;
+
+// Return direct access to the header info, caller might want to inspect the header without decoding
+
+- (MVFileHeader*) header;
 
 @end

@@ -16,28 +16,6 @@
 		CD143B7D138231BA00963BBE /* LS_Back_C_70BPM.caf in Resources */ = {isa = PBXBuildFile; fileRef = CD143B7A138231BA00963BBE /* LS_Back_C_70BPM.caf */; };
 		CD143B7E138231BA00963BBE /* LS_C_Major_Open_4ths.mvid.7z in Resources */ = {isa = PBXBuildFile; fileRef = CD143B7B138231BA00963BBE /* LS_C_Major_Open_4ths.mvid.7z */; };
 		CD143BAD1382351F00963BBE /* note_256.png in Resources */ = {isa = PBXBuildFile; fileRef = CD143BAC1382351F00963BBE /* note_256.png */; };
-		CD143BE5138235F100963BBE /* apng_convert_maxvid.c in Sources */ = {isa = PBXBuildFile; fileRef = CD143BB5138235F100963BBE /* apng_convert_maxvid.c */; };
-		CD143BE6138235F100963BBE /* AV7zApng2MvidResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CD143BB8138235F100963BBE /* AV7zApng2MvidResourceLoader.m */; };
-		CD143BE7138235F100963BBE /* AV7zAppResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CD143BBA138235F100963BBE /* AV7zAppResourceLoader.m */; };
-		CD143BE8138235F100963BBE /* AV7zQT2MvidResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CD143BBC138235F100963BBE /* AV7zQT2MvidResourceLoader.m */; };
-		CD143BE9138235F100963BBE /* AVAnimatorLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CD143BBE138235F100963BBE /* AVAnimatorLayer.m */; };
-		CD143BEA138235F100963BBE /* AVAnimatorMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = CD143BC1138235F100963BBE /* AVAnimatorMedia.m */; };
-		CD143BEB138235F100963BBE /* AVAnimatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD143BC5138235F100963BBE /* AVAnimatorView.m */; };
-		CD143BEC138235F100963BBE /* AVApng2MvidResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CD143BC8138235F100963BBE /* AVApng2MvidResourceLoader.m */; };
-		CD143BED138235F100963BBE /* AVAppResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CD143BCA138235F100963BBE /* AVAppResourceLoader.m */; };
-		CD143BEE138235F100963BBE /* AVFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CD143BCC138235F100963BBE /* AVFileUtil.m */; };
-		CD143BEF138235F100963BBE /* AVFrameDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CD143BCE138235F100963BBE /* AVFrameDecoder.m */; };
-		CD143BF0138235F100963BBE /* AVImageFrameDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CD143BD0138235F100963BBE /* AVImageFrameDecoder.m */; };
-		CD143BF1138235F100963BBE /* AVMvidFrameDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CD143BD2138235F100963BBE /* AVMvidFrameDecoder.m */; };
-		CD143BF2138235F100963BBE /* AVQTAnimationFrameDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CD143BD4138235F100963BBE /* AVQTAnimationFrameDecoder.m */; };
-		CD143BF3138235F100963BBE /* AVResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CD143BD6138235F100963BBE /* AVResourceLoader.m */; };
-		CD143BF4138235F100963BBE /* CGFrameBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = CD143BD8138235F100963BBE /* CGFrameBuffer.m */; };
-		CD143BF5138235F100963BBE /* libapng.c in Sources */ = {isa = PBXBuildFile; fileRef = CD143BD9138235F100963BBE /* libapng.c */; };
-		CD143BF6138235F100963BBE /* maxvid_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = CD143BDB138235F100963BBE /* maxvid_decode.c */; settings = {COMPILER_FLAGS = "-mno-thumb"; }; };
-		CD143BF7138235F100963BBE /* maxvid_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = CD143BDD138235F100963BBE /* maxvid_encode.c */; };
-		CD143BF8138235F100963BBE /* maxvid_file.c in Sources */ = {isa = PBXBuildFile; fileRef = CD143BDF138235F100963BBE /* maxvid_file.c */; };
-		CD143BF9138235F100963BBE /* movdata.c in Sources */ = {isa = PBXBuildFile; fileRef = CD143BE1138235F100963BBE /* movdata.c */; settings = {COMPILER_FLAGS = "-mno-thumb"; }; };
-		CD143BFA138235F100963BBE /* movdata_convert_maxvid.c in Sources */ = {isa = PBXBuildFile; fileRef = CD143BE3138235F100963BBE /* movdata_convert_maxvid.c */; };
 		CD143C21138235FC00963BBE /* 7zBuf.c in Sources */ = {isa = PBXBuildFile; fileRef = CD143BFD138235FC00963BBE /* 7zBuf.c */; };
 		CD143C22138235FC00963BBE /* 7zBuf2.c in Sources */ = {isa = PBXBuildFile; fileRef = CD143BFF138235FC00963BBE /* 7zBuf2.c */; };
 		CD143C23138235FC00963BBE /* 7zDec.c in Sources */ = {isa = PBXBuildFile; fileRef = CD143C00138235FC00963BBE /* 7zDec.c */; };
@@ -76,7 +54,38 @@
 		CD143E0B1382577800963BBE /* VolumeRightTall.png in Resources */ = {isa = PBXBuildFile; fileRef = CD143E021382577800963BBE /* VolumeRightTall.png */; };
 		CD143E1D138257E100963BBE /* MovieControlsAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = CD143E1C138257E100963BBE /* MovieControlsAdaptor.m */; };
 		CD2637D81390254400E18F0C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD2637D71390254400E18F0C /* Icon.png */; };
-		CDE77AF014BDFFAE0012DA1A /* maxvid_decode_arm.s in Sources */ = {isa = PBXBuildFile; fileRef = CDE77AEF14BDFFAE0012DA1A /* maxvid_decode_arm.s */; };
+		CDFB99AE1628ADA900AF74B5 /* ApngConvertMaxvid.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB996F1628ADA900AF74B5 /* ApngConvertMaxvid.m */; };
+		CDFB99AF1628ADA900AF74B5 /* AV7zApng2MvidResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99711628ADA900AF74B5 /* AV7zApng2MvidResourceLoader.m */; };
+		CDFB99B01628ADA900AF74B5 /* AV7zAppResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99731628ADA900AF74B5 /* AV7zAppResourceLoader.m */; };
+		CDFB99B11628ADA900AF74B5 /* AV7zQT2MvidResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99751628ADA900AF74B5 /* AV7zQT2MvidResourceLoader.m */; };
+		CDFB99B21628ADA900AF74B5 /* AVAnimatorLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99771628ADA900AF74B5 /* AVAnimatorLayer.m */; };
+		CDFB99B31628ADA900AF74B5 /* AVAnimatorMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB997A1628ADA900AF74B5 /* AVAnimatorMedia.m */; };
+		CDFB99B41628ADA900AF74B5 /* AVAnimatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB997E1628ADA900AF74B5 /* AVAnimatorView.m */; };
+		CDFB99B51628ADA900AF74B5 /* AVApng2MvidResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99811628ADA900AF74B5 /* AVApng2MvidResourceLoader.m */; };
+		CDFB99B61628ADA900AF74B5 /* AVAppResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99831628ADA900AF74B5 /* AVAppResourceLoader.m */; };
+		CDFB99B71628ADA900AF74B5 /* AVAsset2MvidResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99851628ADA900AF74B5 /* AVAsset2MvidResourceLoader.m */; };
+		CDFB99B81628ADA900AF74B5 /* AVAssetReaderConvertMaxvid.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99881628ADA900AF74B5 /* AVAssetReaderConvertMaxvid.m */; };
+		CDFB99B91628ADA900AF74B5 /* AVAssetWriterConvertFromMaxvid.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB998A1628ADA900AF74B5 /* AVAssetWriterConvertFromMaxvid.m */; };
+		CDFB99BA1628ADA900AF74B5 /* AVFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB998C1628ADA900AF74B5 /* AVFileUtil.m */; };
+		CDFB99BB1628ADA900AF74B5 /* AVFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB998E1628ADA900AF74B5 /* AVFrame.m */; };
+		CDFB99BC1628ADA900AF74B5 /* AVFrameDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99901628ADA900AF74B5 /* AVFrameDecoder.m */; };
+		CDFB99BD1628ADA900AF74B5 /* AVImageFrameDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99921628ADA900AF74B5 /* AVImageFrameDecoder.m */; };
+		CDFB99BE1628ADA900AF74B5 /* AVMvidFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99941628ADA900AF74B5 /* AVMvidFileWriter.m */; };
+		CDFB99BF1628ADA900AF74B5 /* AVMvidFrameDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99961628ADA900AF74B5 /* AVMvidFrameDecoder.m */; };
+		CDFB99C01628ADA900AF74B5 /* AVOfflineComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99981628ADA900AF74B5 /* AVOfflineComposition.m */; };
+		CDFB99C11628ADA900AF74B5 /* AVQTAnimationFrameDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB999A1628ADA900AF74B5 /* AVQTAnimationFrameDecoder.m */; };
+		CDFB99C21628ADA900AF74B5 /* AVResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB999C1628ADA900AF74B5 /* AVResourceLoader.m */; };
+		CDFB99C31628ADA900AF74B5 /* CGFrameBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB999E1628ADA900AF74B5 /* CGFrameBuffer.m */; };
+		CDFB99C41628ADA900AF74B5 /* libapng.c in Sources */ = {isa = PBXBuildFile; fileRef = CDFB999F1628ADA900AF74B5 /* libapng.c */; };
+		CDFB99C51628ADA900AF74B5 /* maxvid_decode_arm.s in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99A11628ADA900AF74B5 /* maxvid_decode_arm.s */; settings = {COMPILER_FLAGS = "-no-integrated-as"; }; };
+		CDFB99C61628ADA900AF74B5 /* maxvid_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99A21628ADA900AF74B5 /* maxvid_decode.c */; };
+		CDFB99C71628ADA900AF74B5 /* maxvid_encode.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99A51628ADA900AF74B5 /* maxvid_encode.m */; };
+		CDFB99C81628ADA900AF74B5 /* maxvid_file.c in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99A61628ADA900AF74B5 /* maxvid_file.c */; };
+		CDFB99C91628ADA900AF74B5 /* movdata.c in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99A81628ADA900AF74B5 /* movdata.c */; };
+		CDFB99CA1628ADA900AF74B5 /* MovdataConvertMaxvid.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99AB1628ADA900AF74B5 /* MovdataConvertMaxvid.m */; };
+		CDFB99CB1628ADA900AF74B5 /* SegmentedMappedData.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99AD1628ADA900AF74B5 /* SegmentedMappedData.m */; };
+		CDFB99CD1628AE0E00AF74B5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFB99CC1628AE0E00AF74B5 /* CoreMedia.framework */; };
+		CDFB99CF1628AE1500AF74B5 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFB99CE1628AE1500AF74B5 /* CoreVideo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,54 +103,6 @@
 		CD143B7A138231BA00963BBE /* LS_Back_C_70BPM.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LS_Back_C_70BPM.caf; sourceTree = "<group>"; };
 		CD143B7B138231BA00963BBE /* LS_C_Major_Open_4ths.mvid.7z */ = {isa = PBXFileReference; lastKnownFileType = file; path = LS_C_Major_Open_4ths.mvid.7z; sourceTree = "<group>"; };
 		CD143BAC1382351F00963BBE /* note_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note_256.png; sourceTree = "<group>"; };
-		CD143BB5138235F100963BBE /* apng_convert_maxvid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = apng_convert_maxvid.c; sourceTree = "<group>"; };
-		CD143BB6138235F100963BBE /* apng_convert_maxvid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = apng_convert_maxvid.h; sourceTree = "<group>"; };
-		CD143BB7138235F100963BBE /* AV7zApng2MvidResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AV7zApng2MvidResourceLoader.h; sourceTree = "<group>"; };
-		CD143BB8138235F100963BBE /* AV7zApng2MvidResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AV7zApng2MvidResourceLoader.m; sourceTree = "<group>"; };
-		CD143BB9138235F100963BBE /* AV7zAppResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AV7zAppResourceLoader.h; sourceTree = "<group>"; };
-		CD143BBA138235F100963BBE /* AV7zAppResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AV7zAppResourceLoader.m; sourceTree = "<group>"; };
-		CD143BBB138235F100963BBE /* AV7zQT2MvidResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AV7zQT2MvidResourceLoader.h; sourceTree = "<group>"; };
-		CD143BBC138235F100963BBE /* AV7zQT2MvidResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AV7zQT2MvidResourceLoader.m; sourceTree = "<group>"; };
-		CD143BBD138235F100963BBE /* AVAnimatorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAnimatorLayer.h; sourceTree = "<group>"; };
-		CD143BBE138235F100963BBE /* AVAnimatorLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAnimatorLayer.m; sourceTree = "<group>"; };
-		CD143BBF138235F100963BBE /* AVAnimatorLayerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAnimatorLayerPrivate.h; sourceTree = "<group>"; };
-		CD143BC0138235F100963BBE /* AVAnimatorMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAnimatorMedia.h; sourceTree = "<group>"; };
-		CD143BC1138235F100963BBE /* AVAnimatorMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAnimatorMedia.m; sourceTree = "<group>"; };
-		CD143BC2138235F100963BBE /* AVAnimatorMediaPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAnimatorMediaPrivate.h; sourceTree = "<group>"; };
-		CD143BC3138235F100963BBE /* AVAnimatorMediaRendererProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAnimatorMediaRendererProtocol.h; sourceTree = "<group>"; };
-		CD143BC4138235F100963BBE /* AVAnimatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAnimatorView.h; sourceTree = "<group>"; };
-		CD143BC5138235F100963BBE /* AVAnimatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAnimatorView.m; sourceTree = "<group>"; };
-		CD143BC6138235F100963BBE /* AVAnimatorViewPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAnimatorViewPrivate.h; sourceTree = "<group>"; };
-		CD143BC7138235F100963BBE /* AVApng2MvidResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVApng2MvidResourceLoader.h; sourceTree = "<group>"; };
-		CD143BC8138235F100963BBE /* AVApng2MvidResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVApng2MvidResourceLoader.m; sourceTree = "<group>"; };
-		CD143BC9138235F100963BBE /* AVAppResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAppResourceLoader.h; sourceTree = "<group>"; };
-		CD143BCA138235F100963BBE /* AVAppResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAppResourceLoader.m; sourceTree = "<group>"; };
-		CD143BCB138235F100963BBE /* AVFileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFileUtil.h; sourceTree = "<group>"; };
-		CD143BCC138235F100963BBE /* AVFileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVFileUtil.m; sourceTree = "<group>"; };
-		CD143BCD138235F100963BBE /* AVFrameDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFrameDecoder.h; sourceTree = "<group>"; };
-		CD143BCE138235F100963BBE /* AVFrameDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVFrameDecoder.m; sourceTree = "<group>"; };
-		CD143BCF138235F100963BBE /* AVImageFrameDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVImageFrameDecoder.h; sourceTree = "<group>"; };
-		CD143BD0138235F100963BBE /* AVImageFrameDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVImageFrameDecoder.m; sourceTree = "<group>"; };
-		CD143BD1138235F100963BBE /* AVMvidFrameDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVMvidFrameDecoder.h; sourceTree = "<group>"; };
-		CD143BD2138235F100963BBE /* AVMvidFrameDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVMvidFrameDecoder.m; sourceTree = "<group>"; };
-		CD143BD3138235F100963BBE /* AVQTAnimationFrameDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVQTAnimationFrameDecoder.h; sourceTree = "<group>"; };
-		CD143BD4138235F100963BBE /* AVQTAnimationFrameDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVQTAnimationFrameDecoder.m; sourceTree = "<group>"; };
-		CD143BD5138235F100963BBE /* AVResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVResourceLoader.h; sourceTree = "<group>"; };
-		CD143BD6138235F100963BBE /* AVResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVResourceLoader.m; sourceTree = "<group>"; };
-		CD143BD7138235F100963BBE /* CGFrameBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGFrameBuffer.h; sourceTree = "<group>"; };
-		CD143BD8138235F100963BBE /* CGFrameBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGFrameBuffer.m; sourceTree = "<group>"; };
-		CD143BD9138235F100963BBE /* libapng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libapng.c; sourceTree = "<group>"; };
-		CD143BDA138235F100963BBE /* libapng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libapng.h; sourceTree = "<group>"; };
-		CD143BDB138235F100963BBE /* maxvid_decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = maxvid_decode.c; sourceTree = "<group>"; };
-		CD143BDC138235F100963BBE /* maxvid_decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxvid_decode.h; sourceTree = "<group>"; };
-		CD143BDD138235F100963BBE /* maxvid_encode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = maxvid_encode.c; sourceTree = "<group>"; };
-		CD143BDE138235F100963BBE /* maxvid_encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxvid_encode.h; sourceTree = "<group>"; };
-		CD143BDF138235F100963BBE /* maxvid_file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = maxvid_file.c; sourceTree = "<group>"; };
-		CD143BE0138235F100963BBE /* maxvid_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxvid_file.h; sourceTree = "<group>"; };
-		CD143BE1138235F100963BBE /* movdata.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = movdata.c; sourceTree = "<group>"; };
-		CD143BE2138235F100963BBE /* movdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movdata.h; sourceTree = "<group>"; };
-		CD143BE3138235F100963BBE /* movdata_convert_maxvid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = movdata_convert_maxvid.c; sourceTree = "<group>"; };
-		CD143BE4138235F100963BBE /* movdata_convert_maxvid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movdata_convert_maxvid.h; sourceTree = "<group>"; };
 		CD143BFC138235FC00963BBE /* 7z.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7z.h; sourceTree = "<group>"; };
 		CD143BFD138235FC00963BBE /* 7zBuf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 7zBuf.c; sourceTree = "<group>"; };
 		CD143BFE138235FC00963BBE /* 7zBuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 7zBuf.h; sourceTree = "<group>"; };
@@ -201,7 +162,72 @@
 		CD143E1B138257E100963BBE /* MovieControlsAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieControlsAdaptor.h; sourceTree = "<group>"; };
 		CD143E1C138257E100963BBE /* MovieControlsAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieControlsAdaptor.m; sourceTree = "<group>"; };
 		CD2637D71390254400E18F0C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		CDE77AEF14BDFFAE0012DA1A /* maxvid_decode_arm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = maxvid_decode_arm.s; sourceTree = "<group>"; };
+		CDFB996E1628ADA900AF74B5 /* ApngConvertMaxvid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApngConvertMaxvid.h; sourceTree = "<group>"; };
+		CDFB996F1628ADA900AF74B5 /* ApngConvertMaxvid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApngConvertMaxvid.m; sourceTree = "<group>"; };
+		CDFB99701628ADA900AF74B5 /* AV7zApng2MvidResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AV7zApng2MvidResourceLoader.h; sourceTree = "<group>"; };
+		CDFB99711628ADA900AF74B5 /* AV7zApng2MvidResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AV7zApng2MvidResourceLoader.m; sourceTree = "<group>"; };
+		CDFB99721628ADA900AF74B5 /* AV7zAppResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AV7zAppResourceLoader.h; sourceTree = "<group>"; };
+		CDFB99731628ADA900AF74B5 /* AV7zAppResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AV7zAppResourceLoader.m; sourceTree = "<group>"; };
+		CDFB99741628ADA900AF74B5 /* AV7zQT2MvidResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AV7zQT2MvidResourceLoader.h; sourceTree = "<group>"; };
+		CDFB99751628ADA900AF74B5 /* AV7zQT2MvidResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AV7zQT2MvidResourceLoader.m; sourceTree = "<group>"; };
+		CDFB99761628ADA900AF74B5 /* AVAnimatorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAnimatorLayer.h; sourceTree = "<group>"; };
+		CDFB99771628ADA900AF74B5 /* AVAnimatorLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAnimatorLayer.m; sourceTree = "<group>"; };
+		CDFB99781628ADA900AF74B5 /* AVAnimatorLayerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAnimatorLayerPrivate.h; sourceTree = "<group>"; };
+		CDFB99791628ADA900AF74B5 /* AVAnimatorMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAnimatorMedia.h; sourceTree = "<group>"; };
+		CDFB997A1628ADA900AF74B5 /* AVAnimatorMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAnimatorMedia.m; sourceTree = "<group>"; };
+		CDFB997B1628ADA900AF74B5 /* AVAnimatorMediaPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAnimatorMediaPrivate.h; sourceTree = "<group>"; };
+		CDFB997C1628ADA900AF74B5 /* AVAnimatorMediaRendererProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAnimatorMediaRendererProtocol.h; sourceTree = "<group>"; };
+		CDFB997D1628ADA900AF74B5 /* AVAnimatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAnimatorView.h; sourceTree = "<group>"; };
+		CDFB997E1628ADA900AF74B5 /* AVAnimatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAnimatorView.m; sourceTree = "<group>"; };
+		CDFB997F1628ADA900AF74B5 /* AVAnimatorViewPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAnimatorViewPrivate.h; sourceTree = "<group>"; };
+		CDFB99801628ADA900AF74B5 /* AVApng2MvidResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVApng2MvidResourceLoader.h; sourceTree = "<group>"; };
+		CDFB99811628ADA900AF74B5 /* AVApng2MvidResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVApng2MvidResourceLoader.m; sourceTree = "<group>"; };
+		CDFB99821628ADA900AF74B5 /* AVAppResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAppResourceLoader.h; sourceTree = "<group>"; };
+		CDFB99831628ADA900AF74B5 /* AVAppResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAppResourceLoader.m; sourceTree = "<group>"; };
+		CDFB99841628ADA900AF74B5 /* AVAsset2MvidResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAsset2MvidResourceLoader.h; sourceTree = "<group>"; };
+		CDFB99851628ADA900AF74B5 /* AVAsset2MvidResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAsset2MvidResourceLoader.m; sourceTree = "<group>"; };
+		CDFB99861628ADA900AF74B5 /* AVAssetConvertCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAssetConvertCommon.h; sourceTree = "<group>"; };
+		CDFB99871628ADA900AF74B5 /* AVAssetReaderConvertMaxvid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAssetReaderConvertMaxvid.h; sourceTree = "<group>"; };
+		CDFB99881628ADA900AF74B5 /* AVAssetReaderConvertMaxvid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAssetReaderConvertMaxvid.m; sourceTree = "<group>"; };
+		CDFB99891628ADA900AF74B5 /* AVAssetWriterConvertFromMaxvid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAssetWriterConvertFromMaxvid.h; sourceTree = "<group>"; };
+		CDFB998A1628ADA900AF74B5 /* AVAssetWriterConvertFromMaxvid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAssetWriterConvertFromMaxvid.m; sourceTree = "<group>"; };
+		CDFB998B1628ADA900AF74B5 /* AVFileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFileUtil.h; sourceTree = "<group>"; };
+		CDFB998C1628ADA900AF74B5 /* AVFileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVFileUtil.m; sourceTree = "<group>"; };
+		CDFB998D1628ADA900AF74B5 /* AVFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFrame.h; sourceTree = "<group>"; };
+		CDFB998E1628ADA900AF74B5 /* AVFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVFrame.m; sourceTree = "<group>"; };
+		CDFB998F1628ADA900AF74B5 /* AVFrameDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFrameDecoder.h; sourceTree = "<group>"; };
+		CDFB99901628ADA900AF74B5 /* AVFrameDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVFrameDecoder.m; sourceTree = "<group>"; };
+		CDFB99911628ADA900AF74B5 /* AVImageFrameDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVImageFrameDecoder.h; sourceTree = "<group>"; };
+		CDFB99921628ADA900AF74B5 /* AVImageFrameDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVImageFrameDecoder.m; sourceTree = "<group>"; };
+		CDFB99931628ADA900AF74B5 /* AVMvidFileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVMvidFileWriter.h; sourceTree = "<group>"; };
+		CDFB99941628ADA900AF74B5 /* AVMvidFileWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVMvidFileWriter.m; sourceTree = "<group>"; };
+		CDFB99951628ADA900AF74B5 /* AVMvidFrameDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVMvidFrameDecoder.h; sourceTree = "<group>"; };
+		CDFB99961628ADA900AF74B5 /* AVMvidFrameDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVMvidFrameDecoder.m; sourceTree = "<group>"; };
+		CDFB99971628ADA900AF74B5 /* AVOfflineComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVOfflineComposition.h; sourceTree = "<group>"; };
+		CDFB99981628ADA900AF74B5 /* AVOfflineComposition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVOfflineComposition.m; sourceTree = "<group>"; };
+		CDFB99991628ADA900AF74B5 /* AVQTAnimationFrameDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVQTAnimationFrameDecoder.h; sourceTree = "<group>"; };
+		CDFB999A1628ADA900AF74B5 /* AVQTAnimationFrameDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVQTAnimationFrameDecoder.m; sourceTree = "<group>"; };
+		CDFB999B1628ADA900AF74B5 /* AVResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVResourceLoader.h; sourceTree = "<group>"; };
+		CDFB999C1628ADA900AF74B5 /* AVResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVResourceLoader.m; sourceTree = "<group>"; };
+		CDFB999D1628ADA900AF74B5 /* CGFrameBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGFrameBuffer.h; sourceTree = "<group>"; };
+		CDFB999E1628ADA900AF74B5 /* CGFrameBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGFrameBuffer.m; sourceTree = "<group>"; };
+		CDFB999F1628ADA900AF74B5 /* libapng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = libapng.c; sourceTree = "<group>"; };
+		CDFB99A01628ADA900AF74B5 /* libapng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libapng.h; sourceTree = "<group>"; };
+		CDFB99A11628ADA900AF74B5 /* maxvid_decode_arm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = maxvid_decode_arm.s; sourceTree = "<group>"; };
+		CDFB99A21628ADA900AF74B5 /* maxvid_decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = maxvid_decode.c; sourceTree = "<group>"; };
+		CDFB99A31628ADA900AF74B5 /* maxvid_decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxvid_decode.h; sourceTree = "<group>"; };
+		CDFB99A41628ADA900AF74B5 /* maxvid_encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxvid_encode.h; sourceTree = "<group>"; };
+		CDFB99A51628ADA900AF74B5 /* maxvid_encode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = maxvid_encode.m; sourceTree = "<group>"; };
+		CDFB99A61628ADA900AF74B5 /* maxvid_file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = maxvid_file.c; sourceTree = "<group>"; };
+		CDFB99A71628ADA900AF74B5 /* maxvid_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxvid_file.h; sourceTree = "<group>"; };
+		CDFB99A81628ADA900AF74B5 /* movdata.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = movdata.c; sourceTree = "<group>"; };
+		CDFB99A91628ADA900AF74B5 /* movdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = movdata.h; sourceTree = "<group>"; };
+		CDFB99AA1628ADA900AF74B5 /* MovdataConvertMaxvid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovdataConvertMaxvid.h; sourceTree = "<group>"; };
+		CDFB99AB1628ADA900AF74B5 /* MovdataConvertMaxvid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovdataConvertMaxvid.m; sourceTree = "<group>"; };
+		CDFB99AC1628ADA900AF74B5 /* SegmentedMappedData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedMappedData.h; sourceTree = "<group>"; };
+		CDFB99AD1628ADA900AF74B5 /* SegmentedMappedData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedMappedData.m; sourceTree = "<group>"; };
+		CDFB99CC1628AE0E00AF74B5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CDFB99CE1628AE1500AF74B5 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +235,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFB99CF1628AE1500AF74B5 /* CoreVideo.framework in Frameworks */,
+				CDFB99CD1628AE0E00AF74B5 /* CoreMedia.framework in Frameworks */,
 				CD143D6E1382363500963BBE /* MediaPlayer.framework in Frameworks */,
 				CD143D6F1382363500963BBE /* QuartzCore.framework in Frameworks */,
 				CD143D701382363500963BBE /* AudioToolbox.framework in Frameworks */,
@@ -257,7 +285,6 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				CD143D8F1382368500963BBE /* libz.dylib */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -289,6 +316,9 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CDFB99CE1628AE1500AF74B5 /* CoreVideo.framework */,
+				CDFB99CC1628AE0E00AF74B5 /* CoreMedia.framework */,
+				CD143D8F1382368500963BBE /* libz.dylib */,
 				CD143D671382363500963BBE /* MediaPlayer.framework */,
 				CD143D681382363500963BBE /* QuartzCore.framework */,
 				CD143D691382363500963BBE /* AudioToolbox.framework */,
@@ -303,55 +333,70 @@
 		CD143BB4138235F100963BBE /* AVAnimator */ = {
 			isa = PBXGroup;
 			children = (
-				CD143BB5138235F100963BBE /* apng_convert_maxvid.c */,
-				CD143BB6138235F100963BBE /* apng_convert_maxvid.h */,
-				CD143BB7138235F100963BBE /* AV7zApng2MvidResourceLoader.h */,
-				CD143BB8138235F100963BBE /* AV7zApng2MvidResourceLoader.m */,
-				CD143BB9138235F100963BBE /* AV7zAppResourceLoader.h */,
-				CD143BBA138235F100963BBE /* AV7zAppResourceLoader.m */,
-				CD143BBB138235F100963BBE /* AV7zQT2MvidResourceLoader.h */,
-				CD143BBC138235F100963BBE /* AV7zQT2MvidResourceLoader.m */,
-				CD143BBD138235F100963BBE /* AVAnimatorLayer.h */,
-				CD143BBE138235F100963BBE /* AVAnimatorLayer.m */,
-				CD143BBF138235F100963BBE /* AVAnimatorLayerPrivate.h */,
-				CD143BC0138235F100963BBE /* AVAnimatorMedia.h */,
-				CD143BC1138235F100963BBE /* AVAnimatorMedia.m */,
-				CD143BC2138235F100963BBE /* AVAnimatorMediaPrivate.h */,
-				CD143BC3138235F100963BBE /* AVAnimatorMediaRendererProtocol.h */,
-				CD143BC4138235F100963BBE /* AVAnimatorView.h */,
-				CD143BC5138235F100963BBE /* AVAnimatorView.m */,
-				CD143BC6138235F100963BBE /* AVAnimatorViewPrivate.h */,
-				CD143BC7138235F100963BBE /* AVApng2MvidResourceLoader.h */,
-				CD143BC8138235F100963BBE /* AVApng2MvidResourceLoader.m */,
-				CD143BC9138235F100963BBE /* AVAppResourceLoader.h */,
-				CD143BCA138235F100963BBE /* AVAppResourceLoader.m */,
-				CD143BCB138235F100963BBE /* AVFileUtil.h */,
-				CD143BCC138235F100963BBE /* AVFileUtil.m */,
-				CD143BCD138235F100963BBE /* AVFrameDecoder.h */,
-				CD143BCE138235F100963BBE /* AVFrameDecoder.m */,
-				CD143BCF138235F100963BBE /* AVImageFrameDecoder.h */,
-				CD143BD0138235F100963BBE /* AVImageFrameDecoder.m */,
-				CD143BD1138235F100963BBE /* AVMvidFrameDecoder.h */,
-				CD143BD2138235F100963BBE /* AVMvidFrameDecoder.m */,
-				CD143BD3138235F100963BBE /* AVQTAnimationFrameDecoder.h */,
-				CD143BD4138235F100963BBE /* AVQTAnimationFrameDecoder.m */,
-				CD143BD5138235F100963BBE /* AVResourceLoader.h */,
-				CD143BD6138235F100963BBE /* AVResourceLoader.m */,
-				CD143BD7138235F100963BBE /* CGFrameBuffer.h */,
-				CD143BD8138235F100963BBE /* CGFrameBuffer.m */,
-				CD143BD9138235F100963BBE /* libapng.c */,
-				CD143BDA138235F100963BBE /* libapng.h */,
-				CD143BDB138235F100963BBE /* maxvid_decode.c */,
-				CDE77AEF14BDFFAE0012DA1A /* maxvid_decode_arm.s */,
-				CD143BDC138235F100963BBE /* maxvid_decode.h */,
-				CD143BDD138235F100963BBE /* maxvid_encode.c */,
-				CD143BDE138235F100963BBE /* maxvid_encode.h */,
-				CD143BDF138235F100963BBE /* maxvid_file.c */,
-				CD143BE0138235F100963BBE /* maxvid_file.h */,
-				CD143BE1138235F100963BBE /* movdata.c */,
-				CD143BE2138235F100963BBE /* movdata.h */,
-				CD143BE3138235F100963BBE /* movdata_convert_maxvid.c */,
-				CD143BE4138235F100963BBE /* movdata_convert_maxvid.h */,
+				CDFB996E1628ADA900AF74B5 /* ApngConvertMaxvid.h */,
+				CDFB996F1628ADA900AF74B5 /* ApngConvertMaxvid.m */,
+				CDFB99701628ADA900AF74B5 /* AV7zApng2MvidResourceLoader.h */,
+				CDFB99711628ADA900AF74B5 /* AV7zApng2MvidResourceLoader.m */,
+				CDFB99721628ADA900AF74B5 /* AV7zAppResourceLoader.h */,
+				CDFB99731628ADA900AF74B5 /* AV7zAppResourceLoader.m */,
+				CDFB99741628ADA900AF74B5 /* AV7zQT2MvidResourceLoader.h */,
+				CDFB99751628ADA900AF74B5 /* AV7zQT2MvidResourceLoader.m */,
+				CDFB99761628ADA900AF74B5 /* AVAnimatorLayer.h */,
+				CDFB99771628ADA900AF74B5 /* AVAnimatorLayer.m */,
+				CDFB99781628ADA900AF74B5 /* AVAnimatorLayerPrivate.h */,
+				CDFB99791628ADA900AF74B5 /* AVAnimatorMedia.h */,
+				CDFB997A1628ADA900AF74B5 /* AVAnimatorMedia.m */,
+				CDFB997B1628ADA900AF74B5 /* AVAnimatorMediaPrivate.h */,
+				CDFB997C1628ADA900AF74B5 /* AVAnimatorMediaRendererProtocol.h */,
+				CDFB997D1628ADA900AF74B5 /* AVAnimatorView.h */,
+				CDFB997E1628ADA900AF74B5 /* AVAnimatorView.m */,
+				CDFB997F1628ADA900AF74B5 /* AVAnimatorViewPrivate.h */,
+				CDFB99801628ADA900AF74B5 /* AVApng2MvidResourceLoader.h */,
+				CDFB99811628ADA900AF74B5 /* AVApng2MvidResourceLoader.m */,
+				CDFB99821628ADA900AF74B5 /* AVAppResourceLoader.h */,
+				CDFB99831628ADA900AF74B5 /* AVAppResourceLoader.m */,
+				CDFB99841628ADA900AF74B5 /* AVAsset2MvidResourceLoader.h */,
+				CDFB99851628ADA900AF74B5 /* AVAsset2MvidResourceLoader.m */,
+				CDFB99861628ADA900AF74B5 /* AVAssetConvertCommon.h */,
+				CDFB99871628ADA900AF74B5 /* AVAssetReaderConvertMaxvid.h */,
+				CDFB99881628ADA900AF74B5 /* AVAssetReaderConvertMaxvid.m */,
+				CDFB99891628ADA900AF74B5 /* AVAssetWriterConvertFromMaxvid.h */,
+				CDFB998A1628ADA900AF74B5 /* AVAssetWriterConvertFromMaxvid.m */,
+				CDFB998B1628ADA900AF74B5 /* AVFileUtil.h */,
+				CDFB998C1628ADA900AF74B5 /* AVFileUtil.m */,
+				CDFB998D1628ADA900AF74B5 /* AVFrame.h */,
+				CDFB998E1628ADA900AF74B5 /* AVFrame.m */,
+				CDFB998F1628ADA900AF74B5 /* AVFrameDecoder.h */,
+				CDFB99901628ADA900AF74B5 /* AVFrameDecoder.m */,
+				CDFB99911628ADA900AF74B5 /* AVImageFrameDecoder.h */,
+				CDFB99921628ADA900AF74B5 /* AVImageFrameDecoder.m */,
+				CDFB99931628ADA900AF74B5 /* AVMvidFileWriter.h */,
+				CDFB99941628ADA900AF74B5 /* AVMvidFileWriter.m */,
+				CDFB99951628ADA900AF74B5 /* AVMvidFrameDecoder.h */,
+				CDFB99961628ADA900AF74B5 /* AVMvidFrameDecoder.m */,
+				CDFB99971628ADA900AF74B5 /* AVOfflineComposition.h */,
+				CDFB99981628ADA900AF74B5 /* AVOfflineComposition.m */,
+				CDFB99991628ADA900AF74B5 /* AVQTAnimationFrameDecoder.h */,
+				CDFB999A1628ADA900AF74B5 /* AVQTAnimationFrameDecoder.m */,
+				CDFB999B1628ADA900AF74B5 /* AVResourceLoader.h */,
+				CDFB999C1628ADA900AF74B5 /* AVResourceLoader.m */,
+				CDFB999D1628ADA900AF74B5 /* CGFrameBuffer.h */,
+				CDFB999E1628ADA900AF74B5 /* CGFrameBuffer.m */,
+				CDFB999F1628ADA900AF74B5 /* libapng.c */,
+				CDFB99A01628ADA900AF74B5 /* libapng.h */,
+				CDFB99A11628ADA900AF74B5 /* maxvid_decode_arm.s */,
+				CDFB99A21628ADA900AF74B5 /* maxvid_decode.c */,
+				CDFB99A31628ADA900AF74B5 /* maxvid_decode.h */,
+				CDFB99A41628ADA900AF74B5 /* maxvid_encode.h */,
+				CDFB99A51628ADA900AF74B5 /* maxvid_encode.m */,
+				CDFB99A61628ADA900AF74B5 /* maxvid_file.c */,
+				CDFB99A71628ADA900AF74B5 /* maxvid_file.h */,
+				CDFB99A81628ADA900AF74B5 /* movdata.c */,
+				CDFB99A91628ADA900AF74B5 /* movdata.h */,
+				CDFB99AA1628ADA900AF74B5 /* MovdataConvertMaxvid.h */,
+				CDFB99AB1628ADA900AF74B5 /* MovdataConvertMaxvid.m */,
+				CDFB99AC1628ADA900AF74B5 /* SegmentedMappedData.h */,
+				CDFB99AD1628ADA900AF74B5 /* SegmentedMappedData.m */,
 			);
 			path = AVAnimator;
 			sourceTree = "<group>";
@@ -511,28 +556,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AVSyncAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* AVSyncViewController.m in Sources */,
-				CD143BE5138235F100963BBE /* apng_convert_maxvid.c in Sources */,
-				CD143BE6138235F100963BBE /* AV7zApng2MvidResourceLoader.m in Sources */,
-				CD143BE7138235F100963BBE /* AV7zAppResourceLoader.m in Sources */,
-				CD143BE8138235F100963BBE /* AV7zQT2MvidResourceLoader.m in Sources */,
-				CD143BE9138235F100963BBE /* AVAnimatorLayer.m in Sources */,
-				CD143BEA138235F100963BBE /* AVAnimatorMedia.m in Sources */,
-				CD143BEB138235F100963BBE /* AVAnimatorView.m in Sources */,
-				CD143BEC138235F100963BBE /* AVApng2MvidResourceLoader.m in Sources */,
-				CD143BED138235F100963BBE /* AVAppResourceLoader.m in Sources */,
-				CD143BEE138235F100963BBE /* AVFileUtil.m in Sources */,
-				CD143BEF138235F100963BBE /* AVFrameDecoder.m in Sources */,
-				CD143BF0138235F100963BBE /* AVImageFrameDecoder.m in Sources */,
-				CD143BF1138235F100963BBE /* AVMvidFrameDecoder.m in Sources */,
-				CD143BF2138235F100963BBE /* AVQTAnimationFrameDecoder.m in Sources */,
-				CD143BF3138235F100963BBE /* AVResourceLoader.m in Sources */,
-				CD143BF4138235F100963BBE /* CGFrameBuffer.m in Sources */,
-				CD143BF5138235F100963BBE /* libapng.c in Sources */,
-				CD143BF6138235F100963BBE /* maxvid_decode.c in Sources */,
-				CD143BF7138235F100963BBE /* maxvid_encode.c in Sources */,
-				CD143BF8138235F100963BBE /* maxvid_file.c in Sources */,
-				CD143BF9138235F100963BBE /* movdata.c in Sources */,
-				CD143BFA138235F100963BBE /* movdata_convert_maxvid.c in Sources */,
 				CD143C21138235FC00963BBE /* 7zBuf.c in Sources */,
 				CD143C22138235FC00963BBE /* 7zBuf2.c in Sources */,
 				CD143C23138235FC00963BBE /* 7zDec.c in Sources */,
@@ -555,7 +578,36 @@
 				CD143E031382577800963BBE /* MovieControlsView.m in Sources */,
 				CD143E041382577800963BBE /* MovieControlsViewController.m in Sources */,
 				CD143E1D138257E100963BBE /* MovieControlsAdaptor.m in Sources */,
-				CDE77AF014BDFFAE0012DA1A /* maxvid_decode_arm.s in Sources */,
+				CDFB99AE1628ADA900AF74B5 /* ApngConvertMaxvid.m in Sources */,
+				CDFB99AF1628ADA900AF74B5 /* AV7zApng2MvidResourceLoader.m in Sources */,
+				CDFB99B01628ADA900AF74B5 /* AV7zAppResourceLoader.m in Sources */,
+				CDFB99B11628ADA900AF74B5 /* AV7zQT2MvidResourceLoader.m in Sources */,
+				CDFB99B21628ADA900AF74B5 /* AVAnimatorLayer.m in Sources */,
+				CDFB99B31628ADA900AF74B5 /* AVAnimatorMedia.m in Sources */,
+				CDFB99B41628ADA900AF74B5 /* AVAnimatorView.m in Sources */,
+				CDFB99B51628ADA900AF74B5 /* AVApng2MvidResourceLoader.m in Sources */,
+				CDFB99B61628ADA900AF74B5 /* AVAppResourceLoader.m in Sources */,
+				CDFB99B71628ADA900AF74B5 /* AVAsset2MvidResourceLoader.m in Sources */,
+				CDFB99B81628ADA900AF74B5 /* AVAssetReaderConvertMaxvid.m in Sources */,
+				CDFB99B91628ADA900AF74B5 /* AVAssetWriterConvertFromMaxvid.m in Sources */,
+				CDFB99BA1628ADA900AF74B5 /* AVFileUtil.m in Sources */,
+				CDFB99BB1628ADA900AF74B5 /* AVFrame.m in Sources */,
+				CDFB99BC1628ADA900AF74B5 /* AVFrameDecoder.m in Sources */,
+				CDFB99BD1628ADA900AF74B5 /* AVImageFrameDecoder.m in Sources */,
+				CDFB99BE1628ADA900AF74B5 /* AVMvidFileWriter.m in Sources */,
+				CDFB99BF1628ADA900AF74B5 /* AVMvidFrameDecoder.m in Sources */,
+				CDFB99C01628ADA900AF74B5 /* AVOfflineComposition.m in Sources */,
+				CDFB99C11628ADA900AF74B5 /* AVQTAnimationFrameDecoder.m in Sources */,
+				CDFB99C21628ADA900AF74B5 /* AVResourceLoader.m in Sources */,
+				CDFB99C31628ADA900AF74B5 /* CGFrameBuffer.m in Sources */,
+				CDFB99C41628ADA900AF74B5 /* libapng.c in Sources */,
+				CDFB99C51628ADA900AF74B5 /* maxvid_decode_arm.s in Sources */,
+				CDFB99C61628ADA900AF74B5 /* maxvid_decode.c in Sources */,
+				CDFB99C71628ADA900AF74B5 /* maxvid_encode.m in Sources */,
+				CDFB99C81628ADA900AF74B5 /* maxvid_file.c in Sources */,
+				CDFB99C91628ADA900AF74B5 /* movdata.c in Sources */,
+				CDFB99CA1628ADA900AF74B5 /* MovdataConvertMaxvid.m in Sources */,
+				CDFB99CB1628ADA900AF74B5 /* SegmentedMappedData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

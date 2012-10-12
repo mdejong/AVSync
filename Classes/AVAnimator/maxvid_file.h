@@ -8,6 +8,12 @@
 
 #define MV_FILE_MAGIC 0xCAFEBABE
 
+// Note that the RGB and SRGB colorsspaces use the same bit flag. So, if
+// SRGB colorspace bit is not set then it means that the RGB colorspace
+// was used.
+
+#define MV_FILE_COLORSPACE_SRGB 0x1
+
 #define MV_FRAME_IS_KEYFRAME 0x1
 #define MV_FRAME_IS_NOPFRAME 0x2
 
@@ -17,17 +23,23 @@
 // usage or portability. Data is a maxvid file is not validated, so the input data can't be
 // invalid. This assumption is based on the fact that most usage will involve
 // generating a maxvid file based on an intermediate format that can be validated.
+// Instead of validating on data access on the embedded device, we validate on write
+// typically done on the desktop.
 
 typedef struct {
   uint32_t magic;
   uint32_t width;
   uint32_t height;
   uint32_t bpp;
-  // FIXME: is flaot 32 bit on 64 bit systems ?
+  // FIXME: is float 32 bit on 64 bit systems ?
   float frameDuration;
   uint32_t numFrames;
+  // revision is the MVID file format revision, in cases where an earlier
+  // version of the file needs to be read by a later version of the library.
+  // The revision portion is the first 8 bits while the rest are bit flags.
+  uint32_t revisionAndFlags;
   // Padding out to 16 words, so that there is room to add additional fields later
-  uint32_t padding[16-6];
+  uint32_t padding[16-7];
 } MVFileHeader;
 
 // After the MVFileHeader, an array of numFrames MVFrame word pairs.
@@ -37,13 +49,6 @@ typedef struct {
     uint32_t lengthAndFlags; // length stored in lower 24 bits. Upper 8 bits contain flags.
     uint32_t adler; // adler32 checksum of the decoded framebuffer
 } MVFrame;
-
-// A MVFile points to the start of the file, the header and frames can be accessed directly.
-
-typedef struct {
-  MVFileHeader header;
-  MVFrame frames[0];
-} MVFile;
 
 static inline
 void maxvid_frame_setkeyframe(MVFrame *mvFrame) {
@@ -98,36 +103,27 @@ uint32_t maxvid_file_emit_nopframe() {
   return 0;
 }
 
-// "open" a memory mapped buffer that contains a completely
-// written .mvid file. The magic number is validated to
-// verify that the file was not partially written, but no
-// other validation is done. The mapped data must not
-// be unmapped while this ref is being used.
+// Verify the contents of the header for a MVID file.
+// The magic number is validated to verify that the file was not
+// partially written. In addition the bpp values are verified.
 
 static inline
-MVFile* maxvid_file_map_open(void *buffer) {
+void maxvid_file_map_verify(void *buffer) {
   assert(sizeof(MVFileHeader) == 16*4);
   assert(sizeof(MVFrame) == 3*4);
-  
-  MVFile *mvFilePtr = (MVFile *)buffer;
-  uint32_t magic = mvFilePtr->header.magic;
+
+  assert(buffer);
+  MVFileHeader *mvFileHeaderPtr = (MVFileHeader *)buffer;
+  uint32_t magic = mvFileHeaderPtr->magic;
   assert(magic == MV_FILE_MAGIC);
-  assert(mvFilePtr->header.bpp == 16 || mvFilePtr->header.bpp == 24 || mvFilePtr->header.bpp == 32);
-  return mvFilePtr;
-}
-
-// "close" is actually a no-op.
-
-static inline
-void maxvid_file_map_close(MVFile *mvFile) {
-  return;
+  assert(mvFileHeaderPtr->bpp == 16 || mvFileHeaderPtr->bpp == 24 || mvFileHeaderPtr->bpp == 32);
 }
 
 // Get the MVFrame* that corresponds to the frame at the given index.
 
 static inline
-MVFrame* maxvid_file_frame(MVFile *mvFile, uint32_t index) {
-  return &(mvFile->frames[index]);
+MVFrame* maxvid_file_frame(MVFrame *mvFrames, uint32_t index) {
+  return &(mvFrames[index]);
 }
 
 // Return non-zero if the indicated FILE* is ready to be processed,
@@ -153,49 +149,51 @@ uint32_t maxvid_file_is_valid(FILE *inFile) {
   }
 }
 
-// Emit zero length words up to the next page bound when emitting a keyframe.
-// Pass in the current offset, function returns the new offset. This method
-// will emit zero words of padding if exactly on the page bound already.
+// Query the file "revision", meaning a integer number that would get incremented
+// when an incompatible change to the file format is made. This is only useful
+// for library internals that might need to do something slightly different
+// depending on the binary layout of older versions of the file.
 
 static inline
-uint32_t maxvid_file_padding_before_keyframe(FILE *outFile, uint32_t offset) {
-  assert((offset % 4) == 0);
-  
-  const uint32_t boundSize = MV_PAGESIZE;
-  uint32_t bytesToBound = UINTMOD(offset, boundSize);
-  assert(bytesToBound >= 0 && bytesToBound <= boundSize);
-    
-  bytesToBound = boundSize - bytesToBound;
-  uint32_t wordsToBound = bytesToBound >> 2;
-  wordsToBound &= ((MV_PAGESIZE >> 2) - 1);
-
-  if (wordsToBound > 0) {
-    assert(bytesToBound == (wordsToBound * 4));
-    assert(wordsToBound < (boundSize / 4));
-  }
-
-  uint32_t zero = 0;
-  while (wordsToBound != 0) {
-    size_t size = fwrite(&zero, sizeof(zero), 1, outFile);
-    assert(size == 1);
-    wordsToBound--;
-  }
-  
-  offset = ftell(outFile);
-
-  assert(UINTMOD(offset, boundSize) == 0);
-  
-  return offset;
+uint8_t maxvid_file_revision(MVFileHeader *fileHeaderPtr) {
+  uint8_t revision = fileHeaderPtr->revisionAndFlags & 0xFF;
+  return revision;
 }
 
-// Emit zero length words up to the next page bound after the keyframe data.
-// Pass in the current offset, function returns the new offset.
-// This method will emit zero words of padding if exactly on the page bound already.
+// Explicitly set the maxvid file revision. The initial revision used is zero.
 
 static inline
-uint32_t maxvid_file_padding_after_keyframe(FILE *outFile, uint32_t offset) {
-  return maxvid_file_padding_before_keyframe(outFile, offset);
+void maxvid_file_set_revision(MVFileHeader *fileHeaderPtr, uint8_t revision) {
+  uint32_t flags = fileHeaderPtr->revisionAndFlags >> 8;
+  fileHeaderPtr->revisionAndFlags = (flags << 8) | revision;  
 }
+
+// Return TRUE if the colorspace indicated in the file is the RGB generic colorspace.
+
+static inline
+uint32_t maxvid_file_colorspace_is_rgb(MVFileHeader *fileHeaderPtr) {
+  uint32_t flags = fileHeaderPtr->revisionAndFlags >> 8;
+  uint32_t isSRGB = flags & MV_FILE_COLORSPACE_SRGB;
+  return (isSRGB == 0);
+}
+
+// Return TRUE if the colorspace indicated in the file is the SRGB calibrated colorspace.
+
+static inline
+uint32_t maxvid_file_colorspace_is_srgb(MVFileHeader *fileHeaderPtr) {
+  uint32_t flags = fileHeaderPtr->revisionAndFlags >> 8;
+  uint32_t isSRGB = flags & MV_FILE_COLORSPACE_SRGB;
+  return isSRGB;
+}
+
+// Explicitly set the colorspace flag to indicate SRGB is used.
+
+static inline
+void maxvid_file_colorspace_set_srgb(MVFileHeader *fileHeaderPtr) {  
+  fileHeaderPtr->revisionAndFlags |= (MV_FILE_COLORSPACE_SRGB << 8);
+}
+
+// adler32 calculation method
 
 uint32_t maxvid_adler32(
                         uint32_t adler,

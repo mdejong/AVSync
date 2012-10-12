@@ -14,7 +14,7 @@
 @synthesize urls = m_urls;
 @synthesize dataObjs = m_dataObjs;
 @synthesize cachedImageObjs = m_cachedImageObjs;
-@synthesize currentFrame = m_currentFrame;
+@synthesize currentFrameImage = m_currentFrameImage;
 
 - (void) dealloc {
   [AutoPropertyRelease releaseProperties:self thisClass:AVImageFrameDecoder.class];
@@ -102,39 +102,48 @@
   // the same as the UIImageView animation logic.
   
   if (cacheDecodedImages) {
-    NSMutableArray *mArr = [NSMutableArray arrayWithCapacity:[urls count]];
+    NSMutableArray *cachedArr = [NSMutableArray arrayWithCapacity:[urls count]];
     for ( NSData *data in obj.dataObjs ) {
       UIImage *img = [UIImage imageWithData:data];
       NSAssert(img, @"img is nil");
-      [mArr addObject:img];
+      [cachedArr addObject:img];
     }
-    obj.cachedImageObjs = [NSArray arrayWithArray:mArr];    
+    obj.cachedImageObjs = [NSArray arrayWithArray:cachedArr];    
   }
   
   return obj;
 }
 
-- (UIImage*) advanceToFrame:(NSUInteger)newFrameIndex
+- (AVFrame*) advanceToFrame:(NSUInteger)newFrameIndex
 {
   NSAssert(newFrameIndex >= 0 || newFrameIndex < [self.urls count], @"newFrameIndex is out of range");
   
   // If decoded images were cached in memory, no need to decode
   
   if (self.cachedImageObjs != nil) {
-    return [self.cachedImageObjs objectAtIndex:newFrameIndex];
+    UIImage *img = [self.cachedImageObjs objectAtIndex:newFrameIndex];
+    
+    AVFrame *frame = [AVFrame aVFrame];
+    frame.image = img;
+    return frame;
   }
     
   //NSURL *url = [self.urls objectAtIndex:newFrameIndex];
   NSData *data = [self.dataObjs objectAtIndex:newFrameIndex];
 	UIImage *img = [UIImage imageWithData:data];
   NSAssert(img, @"img is nil");
-  self.currentFrame = img;
-  return img;
+  self.currentFrameImage = img;
+  
+  AVFrame *frame = [AVFrame aVFrame];
+  frame.image = img;
+  return frame;
 }
 
-- (UIImage*) duplicateCurrentFrame
+- (AVFrame*) duplicateCurrentFrame
 {
-  return self.currentFrame;
+  AVFrame *frame = [AVFrame aVFrame];
+  frame.image = self.currentFrameImage;
+  return frame;
 }
 
 - (void) resourceUsageLimit:(BOOL)enabled
@@ -177,15 +186,32 @@
 
 // Properties
 
-// Dimensions of each frame
+// Dimensions of each frame. This logic assumes all frames have same dimensions.
+
 - (NSUInteger) width
 {
-  return -1;
+  AVFrame *frame;
+  UIImage *image;
+  if (self.currentFrameImage == nil) {
+    frame = [self advanceToFrame:0];
+    image = frame.image;    
+  } else {
+    image = self.currentFrameImage;
+  }
+  return image.size.width;
 }
 
 - (NSUInteger) height
 {
-  return -1;
+  AVFrame *frame;
+  UIImage *image;
+  if (self.currentFrameImage == nil) {
+    frame = [self advanceToFrame:0];
+    image = frame.image;    
+  } else {
+    image = self.currentFrameImage;
+  }
+  return image.size.height;
 }
 
 // True when resource has been opened via openForReading
@@ -212,7 +238,13 @@
 // Time each frame shold be displayed
 - (NSTimeInterval) frameDuration
 {
-  return 0.0;
+  return self->m_frameDuration;
+}
+
+// This method will explicitly set value returned by frameDuration.
+- (void) setFrameDuration:(NSTimeInterval)duration
+{
+  self->m_frameDuration = duration;
 }
 
 - (BOOL) hasAlphaChannel
