@@ -104,7 +104,6 @@
 		28D7ACF60DDB3853001CB0EB /* AVSyncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVSyncViewController.h; sourceTree = "<group>"; };
 		28D7ACF70DDB3853001CB0EB /* AVSyncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVSyncViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* AVSync_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVSync_Prefix.pch; sourceTree = "<group>"; };
 		3CBE84341BC775C900C2280C /* AVAnimatorOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAnimatorOpenGLView.h; sourceTree = "<group>"; };
 		3CBE84351BC775C900C2280C /* AVAnimatorOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAnimatorOpenGLView.m; sourceTree = "<group>"; };
 		3CBE84361BC775C900C2280C /* AVAnimatorOpenGLViewPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAnimatorOpenGLViewPrivate.h; sourceTree = "<group>"; };
@@ -314,7 +313,6 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32CA4F630368D1EE00C91783 /* AVSync_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -656,7 +654,6 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = AVSync_Prefix.pch;
 				INFOPLIST_FILE = "AVSync-Info.plist";
 				PRODUCT_NAME = AVSync;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -669,7 +666,6 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = AVSync_Prefix.pch;
 				INFOPLIST_FILE = "AVSync-Info.plist";
 				PRODUCT_NAME = AVSync;
 				TARGETED_DEVICE_FAMILY = 1;
