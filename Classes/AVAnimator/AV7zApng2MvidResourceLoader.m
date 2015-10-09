@@ -23,7 +23,12 @@
 
 + (AV7zApng2MvidResourceLoader*) aV7zApng2MvidResourceLoader
 {
-  return [[[AV7zApng2MvidResourceLoader alloc] init] autorelease];
+  AV7zApng2MvidResourceLoader *obj = [[AV7zApng2MvidResourceLoader alloc] init];
+#if __has_feature(objc_arc)
+  return obj;
+#else
+  return [obj autorelease];
+#endif // objc_arc
 }
 
 // This method is invoked in the secondary thread to decode the contents of the archive entry
@@ -32,7 +37,7 @@
 #define LOGGING
 
 + (void) decodeThreadEntryPoint:(NSArray*)arr {  
-  NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+  @autoreleasepool {
   
   NSAssert([arr count] == 7, @"arr count");
   
@@ -113,13 +118,14 @@
     [self releaseSerialResourceLoaderLock];
   }
 
-  [pool drain];
+  }
 }
 
 - (void) _detachNewThread:(NSString*)archivePath
              archiveEntry:(NSString*)archiveEntry
              phonyOutPath:(NSString*)phonyOutPath
                   outPath:(NSString*)outPath
+           flattenOutPath:(NSString*)flattenOutPath
 {
   // Use the same paths defined in the superclass, but pass 1 additional temp filename that will contain
   // the intermediate results of the conversion.

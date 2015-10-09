@@ -12,6 +12,15 @@
 		2899E5220DE3E06400AC0155 /* AVSyncViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* AVSyncViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* AVSyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* AVSyncViewController.m */; };
+		3CBE843D1BC775C900C2280C /* AVAnimatorOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBE84351BC775C900C2280C /* AVAnimatorOpenGLView.m */; settings = {ASSET_TAGS = (); }; };
+		3CBE843E1BC775C900C2280C /* AVGIF89A2MvidResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBE84381BC775C900C2280C /* AVGIF89A2MvidResourceLoader.m */; settings = {ASSET_TAGS = (); }; };
+		3CBE843F1BC775C900C2280C /* maxvid_deltas.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBE843A1BC775C900C2280C /* maxvid_deltas.m */; settings = {ASSET_TAGS = (); }; };
+		3CBE84401BC775C900C2280C /* MutableAttrString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBE843C1BC775C900C2280C /* MutableAttrString.m */; settings = {ASSET_TAGS = (); }; };
+		3CBE84421BC7875E00C2280C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBE84411BC7875E00C2280C /* OpenGLES.framework */; };
+		3CBE84441BC7877400C2280C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBE84431BC7877400C2280C /* CoreText.framework */; };
+		3CBE84461BC787B500C2280C /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBE84451BC787B500C2280C /* ImageIO.framework */; };
+		3CBE84481BC787C900C2280C /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBE84471BC787C900C2280C /* GLKit.framework */; };
+		3CBE844A1BC787FA00C2280C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CBE84491BC787FA00C2280C /* MobileCoreServices.framework */; };
 		CD143B7C138231BA00963BBE /* LS_Back_C_45BPM.caf in Resources */ = {isa = PBXBuildFile; fileRef = CD143B79138231BA00963BBE /* LS_Back_C_45BPM.caf */; };
 		CD143B7D138231BA00963BBE /* LS_Back_C_70BPM.caf in Resources */ = {isa = PBXBuildFile; fileRef = CD143B7A138231BA00963BBE /* LS_Back_C_70BPM.caf */; };
 		CD143B7E138231BA00963BBE /* LS_C_Major_Open_4ths.mvid.7z in Resources */ = {isa = PBXBuildFile; fileRef = CD143B7B138231BA00963BBE /* LS_C_Major_Open_4ths.mvid.7z */; };
@@ -43,7 +52,6 @@
 		CD143D741382363500963BBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD143D6D1382363500963BBE /* CoreGraphics.framework */; };
 		CD143D8A1382366800963BBE /* AutoPropertyRelease.m in Sources */ = {isa = PBXBuildFile; fileRef = CD143D891382366800963BBE /* AutoPropertyRelease.m */; };
 		CD143D901382368500963BBE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD143D8F1382368500963BBE /* libz.dylib */; };
-		CD143E031382577800963BBE /* MovieControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD143DF91382577800963BBE /* MovieControlsView.m */; };
 		CD143E041382577800963BBE /* MovieControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD143DFB1382577800963BBE /* MovieControlsViewController.m */; };
 		CD143E051382577800963BBE /* MovieTransportBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = CD143DFC1382577800963BBE /* MovieTransportBackground.png */; };
 		CD143E061382577800963BBE /* nexttrack.png in Resources */ = {isa = PBXBuildFile; fileRef = CD143DFD1382577800963BBE /* nexttrack.png */; };
@@ -77,7 +85,7 @@
 		CDFB99C21628ADA900AF74B5 /* AVResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB999C1628ADA900AF74B5 /* AVResourceLoader.m */; };
 		CDFB99C31628ADA900AF74B5 /* CGFrameBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB999E1628ADA900AF74B5 /* CGFrameBuffer.m */; };
 		CDFB99C41628ADA900AF74B5 /* libapng.c in Sources */ = {isa = PBXBuildFile; fileRef = CDFB999F1628ADA900AF74B5 /* libapng.c */; };
-		CDFB99C51628ADA900AF74B5 /* maxvid_decode_arm.s in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99A11628ADA900AF74B5 /* maxvid_decode_arm.s */; settings = {COMPILER_FLAGS = "-no-integrated-as"; }; };
+		CDFB99C51628ADA900AF74B5 /* maxvid_decode_arm.s in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99A11628ADA900AF74B5 /* maxvid_decode_arm.s */; };
 		CDFB99C61628ADA900AF74B5 /* maxvid_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99A21628ADA900AF74B5 /* maxvid_decode.c */; };
 		CDFB99C71628ADA900AF74B5 /* maxvid_encode.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99A51628ADA900AF74B5 /* maxvid_encode.m */; };
 		CDFB99C81628ADA900AF74B5 /* maxvid_file.c in Sources */ = {isa = PBXBuildFile; fileRef = CDFB99A61628ADA900AF74B5 /* maxvid_file.c */; };
@@ -97,6 +105,20 @@
 		28D7ACF70DDB3853001CB0EB /* AVSyncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVSyncViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* AVSync_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVSync_Prefix.pch; sourceTree = "<group>"; };
+		3CBE84341BC775C900C2280C /* AVAnimatorOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAnimatorOpenGLView.h; sourceTree = "<group>"; };
+		3CBE84351BC775C900C2280C /* AVAnimatorOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAnimatorOpenGLView.m; sourceTree = "<group>"; };
+		3CBE84361BC775C900C2280C /* AVAnimatorOpenGLViewPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAnimatorOpenGLViewPrivate.h; sourceTree = "<group>"; };
+		3CBE84371BC775C900C2280C /* AVGIF89A2MvidResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVGIF89A2MvidResourceLoader.h; sourceTree = "<group>"; };
+		3CBE84381BC775C900C2280C /* AVGIF89A2MvidResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVGIF89A2MvidResourceLoader.m; sourceTree = "<group>"; };
+		3CBE84391BC775C900C2280C /* maxvid_deltas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = maxvid_deltas.h; sourceTree = "<group>"; };
+		3CBE843A1BC775C900C2280C /* maxvid_deltas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = maxvid_deltas.m; sourceTree = "<group>"; };
+		3CBE843B1BC775C900C2280C /* MutableAttrString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutableAttrString.h; sourceTree = "<group>"; };
+		3CBE843C1BC775C900C2280C /* MutableAttrString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutableAttrString.m; sourceTree = "<group>"; };
+		3CBE84411BC7875E00C2280C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		3CBE84431BC7877400C2280C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		3CBE84451BC787B500C2280C /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		3CBE84471BC787C900C2280C /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		3CBE84491BC787FA00C2280C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* AVSync-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AVSync-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		CD143B79138231BA00963BBE /* LS_Back_C_45BPM.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LS_Back_C_45BPM.caf; sourceTree = "<group>"; };
 		CD143B7A138231BA00963BBE /* LS_Back_C_70BPM.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LS_Back_C_70BPM.caf; sourceTree = "<group>"; };
@@ -147,8 +169,6 @@
 		CD143D881382366800963BBE /* AutoPropertyRelease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoPropertyRelease.h; sourceTree = "<group>"; };
 		CD143D891382366800963BBE /* AutoPropertyRelease.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoPropertyRelease.m; sourceTree = "<group>"; };
 		CD143D8F1382368500963BBE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		CD143DF81382577800963BBE /* MovieControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieControlsView.h; sourceTree = "<group>"; };
-		CD143DF91382577800963BBE /* MovieControlsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieControlsView.m; sourceTree = "<group>"; };
 		CD143DFA1382577800963BBE /* MovieControlsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieControlsViewController.h; sourceTree = "<group>"; };
 		CD143DFB1382577800963BBE /* MovieControlsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieControlsViewController.m; sourceTree = "<group>"; };
 		CD143DFC1382577800963BBE /* MovieTransportBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MovieTransportBackground.png; sourceTree = "<group>"; };
@@ -232,6 +252,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CBE844A1BC787FA00C2280C /* MobileCoreServices.framework in Frameworks */,
+				3CBE84481BC787C900C2280C /* GLKit.framework in Frameworks */,
+				3CBE84461BC787B500C2280C /* ImageIO.framework in Frameworks */,
+				3CBE84441BC7877400C2280C /* CoreText.framework in Frameworks */,
+				3CBE84421BC7875E00C2280C /* OpenGLES.framework in Frameworks */,
+				CD143D741382363500963BBE /* CoreGraphics.framework in Frameworks */,
 				CDFB99CF1628AE1500AF74B5 /* CoreVideo.framework in Frameworks */,
 				CDFB99CD1628AE0E00AF74B5 /* CoreMedia.framework in Frameworks */,
 				CD143D6E1382363500963BBE /* MediaPlayer.framework in Frameworks */,
@@ -240,7 +266,6 @@
 				CD143D711382363500963BBE /* AVFoundation.framework in Frameworks */,
 				CD143D721382363500963BBE /* UIKit.framework in Frameworks */,
 				CD143D731382363500963BBE /* Foundation.framework in Frameworks */,
-				CD143D741382363500963BBE /* CoreGraphics.framework in Frameworks */,
 				CD143D901382368500963BBE /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +338,11 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3CBE84491BC787FA00C2280C /* MobileCoreServices.framework */,
+				3CBE84471BC787C900C2280C /* GLKit.framework */,
+				3CBE84451BC787B500C2280C /* ImageIO.framework */,
+				3CBE84431BC7877400C2280C /* CoreText.framework */,
+				3CBE84411BC7875E00C2280C /* OpenGLES.framework */,
 				CDFB99CE1628AE1500AF74B5 /* CoreVideo.framework */,
 				CDFB99CC1628AE0E00AF74B5 /* CoreMedia.framework */,
 				CD143D8F1382368500963BBE /* libz.dylib */,
@@ -330,6 +360,15 @@
 		CD143BB4138235F100963BBE /* AVAnimator */ = {
 			isa = PBXGroup;
 			children = (
+				3CBE84341BC775C900C2280C /* AVAnimatorOpenGLView.h */,
+				3CBE84351BC775C900C2280C /* AVAnimatorOpenGLView.m */,
+				3CBE84361BC775C900C2280C /* AVAnimatorOpenGLViewPrivate.h */,
+				3CBE84371BC775C900C2280C /* AVGIF89A2MvidResourceLoader.h */,
+				3CBE84381BC775C900C2280C /* AVGIF89A2MvidResourceLoader.m */,
+				3CBE84391BC775C900C2280C /* maxvid_deltas.h */,
+				3CBE843A1BC775C900C2280C /* maxvid_deltas.m */,
+				3CBE843B1BC775C900C2280C /* MutableAttrString.h */,
+				3CBE843C1BC775C900C2280C /* MutableAttrString.m */,
 				CDFB996E1628ADA900AF74B5 /* ApngConvertMaxvid.h */,
 				CDFB996F1628ADA900AF74B5 /* ApngConvertMaxvid.m */,
 				CDFB99701628ADA900AF74B5 /* AV7zApng2MvidResourceLoader.h */,
@@ -457,8 +496,6 @@
 		CD143DF71382577800963BBE /* MovieControls */ = {
 			isa = PBXGroup;
 			children = (
-				CD143DF81382577800963BBE /* MovieControlsView.h */,
-				CD143DF91382577800963BBE /* MovieControlsView.m */,
 				CD143DFA1382577800963BBE /* MovieControlsViewController.h */,
 				CD143DFB1382577800963BBE /* MovieControlsViewController.m */,
 				CD143DFC1382577800963BBE /* MovieTransportBackground.png */,
@@ -558,6 +595,7 @@
 				CD143C25138235FC00963BBE /* 7zIn.c in Sources */,
 				CD143C26138235FC00963BBE /* 7zStream.c in Sources */,
 				CD143C27138235FC00963BBE /* Alloc.c in Sources */,
+				3CBE843E1BC775C900C2280C /* AVGIF89A2MvidResourceLoader.m in Sources */,
 				CD143C28138235FC00963BBE /* CpuArch.c in Sources */,
 				CD143C29138235FC00963BBE /* Delta.c in Sources */,
 				CD143C2A138235FC00963BBE /* Lzma2Dec.c in Sources */,
@@ -570,7 +608,7 @@
 				CD143C31138235FC00963BBE /* 7zAlloc.c in Sources */,
 				CD143C32138235FC00963BBE /* 7zMain.c in Sources */,
 				CD143D8A1382366800963BBE /* AutoPropertyRelease.m in Sources */,
-				CD143E031382577800963BBE /* MovieControlsView.m in Sources */,
+				3CBE843F1BC775C900C2280C /* maxvid_deltas.m in Sources */,
 				CD143E041382577800963BBE /* MovieControlsViewController.m in Sources */,
 				CD143E1D138257E100963BBE /* MovieControlsAdaptor.m in Sources */,
 				CDFB99AE1628ADA900AF74B5 /* ApngConvertMaxvid.m in Sources */,
@@ -588,6 +626,7 @@
 				CDFB99BB1628ADA900AF74B5 /* AVFrame.m in Sources */,
 				CDFB99BC1628ADA900AF74B5 /* AVFrameDecoder.m in Sources */,
 				CDFB99BD1628ADA900AF74B5 /* AVImageFrameDecoder.m in Sources */,
+				3CBE843D1BC775C900C2280C /* AVAnimatorOpenGLView.m in Sources */,
 				CDFB99BE1628ADA900AF74B5 /* AVMvidFileWriter.m in Sources */,
 				CDFB99BF1628ADA900AF74B5 /* AVMvidFrameDecoder.m in Sources */,
 				CDFB99C01628ADA900AF74B5 /* AVOfflineComposition.m in Sources */,
@@ -598,6 +637,7 @@
 				CDFB99C61628ADA900AF74B5 /* maxvid_decode.c in Sources */,
 				CDFB99C71628ADA900AF74B5 /* maxvid_encode.m in Sources */,
 				CDFB99C81628ADA900AF74B5 /* maxvid_file.c in Sources */,
+				3CBE84401BC775C900C2280C /* MutableAttrString.m in Sources */,
 				CDFB99C91628ADA900AF74B5 /* movdata.c in Sources */,
 				CDFB99CB1628ADA900AF74B5 /* SegmentedMappedData.m in Sources */,
 				CD93815716B364C200B45997 /* AVAssetFrameDecoder.m in Sources */,
@@ -619,6 +659,7 @@
 				GCC_PREFIX_HEADER = AVSync_Prefix.pch;
 				INFOPLIST_FILE = "AVSync-Info.plist";
 				PRODUCT_NAME = AVSync;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -631,6 +672,7 @@
 				GCC_PREFIX_HEADER = AVSync_Prefix.pch;
 				INFOPLIST_FILE = "AVSync-Info.plist";
 				PRODUCT_NAME = AVSync;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -643,7 +685,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -656,7 +698,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "";
 				SDKROOT = iphoneos;
 			};
