@@ -15,6 +15,7 @@
 		3C5DC5891DECEBC60029A61F /* AVAnimatorH264AlphaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5DC5841DECEBC60029A61F /* AVAnimatorH264AlphaPlayer.m */; };
 		3C5DC58A1DECEBC60029A61F /* AVAssetMixAlphaResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5DC5861DECEBC60029A61F /* AVAssetMixAlphaResourceLoader.m */; };
 		3C5DC58B1DECEBC60029A61F /* AVStreamEncodeDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C5DC5881DECEBC60029A61F /* AVStreamEncodeDecode.m */; };
+		3C5DC58D1DECEC870029A61F /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C5DC58C1DECEC870029A61F /* CoreImage.framework */; };
 		3CBE843D1BC775C900C2280C /* AVAnimatorOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBE84351BC775C900C2280C /* AVAnimatorOpenGLView.m */; };
 		3CBE843E1BC775C900C2280C /* AVGIF89A2MvidResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBE84381BC775C900C2280C /* AVGIF89A2MvidResourceLoader.m */; };
 		3CBE843F1BC775C900C2280C /* maxvid_deltas.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBE843A1BC775C900C2280C /* maxvid_deltas.m */; };
@@ -113,6 +114,7 @@
 		3C5DC5861DECEBC60029A61F /* AVAssetMixAlphaResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAssetMixAlphaResourceLoader.m; sourceTree = "<group>"; };
 		3C5DC5871DECEBC60029A61F /* AVStreamEncodeDecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVStreamEncodeDecode.h; sourceTree = "<group>"; };
 		3C5DC5881DECEBC60029A61F /* AVStreamEncodeDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVStreamEncodeDecode.m; sourceTree = "<group>"; };
+		3C5DC58C1DECEC870029A61F /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		3CBE84341BC775C900C2280C /* AVAnimatorOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAnimatorOpenGLView.h; sourceTree = "<group>"; };
 		3CBE84351BC775C900C2280C /* AVAnimatorOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAnimatorOpenGLView.m; sourceTree = "<group>"; };
 		3CBE84361BC775C900C2280C /* AVAnimatorOpenGLViewPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAnimatorOpenGLViewPrivate.h; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C5DC58D1DECEC870029A61F /* CoreImage.framework in Frameworks */,
 				3CBE844A1BC787FA00C2280C /* MobileCoreServices.framework in Frameworks */,
 				3CBE84481BC787C900C2280C /* GLKit.framework in Frameworks */,
 				3CBE84461BC787B500C2280C /* ImageIO.framework in Frameworks */,
@@ -345,6 +348,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C5DC58C1DECEC870029A61F /* CoreImage.framework */,
 				3CBE84491BC787FA00C2280C /* MobileCoreServices.framework */,
 				3CBE84471BC787C900C2280C /* GLKit.framework */,
 				3CBE84451BC787B500C2280C /* ImageIO.framework */,
@@ -549,6 +553,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = 9F74CLHA49;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "AVSync" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -669,10 +678,12 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 9F74CLHA49;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "AVSync-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = AVSync;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -683,8 +694,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 9F74CLHA49;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "AVSync-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = AVSync;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
